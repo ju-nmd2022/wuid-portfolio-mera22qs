@@ -1,70 +1,37 @@
-.body{
-    height: 100vh;
+body{
+    background-color:#DDE3E3;
+    margin: 0px;
 }
-.main-grid{
-    background-color: beige;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    'header header header'
-    'content content content'
-    'footer footer footer';
-    gap: 2rem;
-    height: 100vh;
-}
-
 .header{
-    background-color: aquamarine;
-    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
 }
-.content{
-    background-color: bisque;
-    grid-area: content;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    'far-left left center right far-right'
-    'far-left left center right far-right'
-    'far-left left center right far-right'
-    'far-left left center right far-right'
-    'far-left left center right far-right';
+.flexcontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    justify-content: center;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: underline;
+}
+h2,h3,h4{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:left
+}
+p,li{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-}
-.far-left {
-    background-color: rgb(172, 205, 193);
-    grid-area: far-left;
-}
-.far-left > Abisko1 {
-    grid-area: far-left;
-}
-.left {
-    background-color: rgb(254, 171, 171);
-    grid-area: left;
-}
-.left > Layout{
-    grid-area: left;
-}
-.center {
-    background-color: rgb(188, 134, 214);
-    grid-area: center;
-}
-.center > Namnlöst-1{
-    grid-area: center;
-}
-.right {
-    background-color: rgb(255, 240, 224);
-    grid-area: right;
-}
-.right > Patrick {
-    grid-area: right;
-}
-.far-right {
-    background-color: rgb(199, 195, 240);
-    grid-area: far-right;
-}
-.footer{
-    background-color: rgb(161, 255, 255);
-    grid-area: footer;
+.ocean{
+   height: 590px;
+   width: 500px;
+   
 }
