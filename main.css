@@ -8,6 +8,17 @@ body {
     gap: 5rem;
     justify-content: center;
 }
+    
+.header > p {   
+    text-decoration: none;
+    text-decoration-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-auto-columns: auto auto;
+    grid-auto-rows: auto auto;
+}
 .flexcontainer {
     display: flex;
     flex-direction: row;
@@ -44,6 +55,12 @@ p,li {
     justify-content: center;
 
 }
+.flexbox-jkpg > div > h1,h2,h3{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
 .jkpg-img {
     border-radius: 10%;
     width: 300px;
@@ -63,7 +80,12 @@ p,li {
     margin-top: 1rem;
     height: 100vh;
     justify-content: center;
+}
 
+.grid-portfolio > div > h1,h2,h3,h4,h5 {
+    font-size: 15px; 
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 .grid-detailpage{
     display: grid;
@@ -71,8 +93,8 @@ p,li {
     grid-template-rows: auto auto;
     grid-template-areas: 
     'info detail2'
-    'space detail3'
-    'space detail4';
+    'info detail3'
+    'info detail4';
     gap: 2rem;
     margin-top: 2rem;
     height: 100vh;
@@ -97,10 +119,20 @@ p,li {
     border-radius: 10%;
     max-width: 500px;
     max-height: 500px;
+    animation: ease-in;
+    animation-duration: 2s;
 }
-
+.detail1 > h1 {
+    grid-area: info;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
 .detail1{
     grid-area: info;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
 }
 .detail2{
     grid-area: detail2;
@@ -114,4 +146,27 @@ p,li {
 .detail-img, .detail-img-list {
     border-radius: 10%;
     max-width: 800px;
+} 
+.branding:hover {
+    animation-name: branding-color;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+@keyframes branding-color {
+    0% {background-color: blueviolet; }
+    50% {background-color: aquamarine;}
+    100% {background-color: beige;}
+    
+}
+@media screen and (max-width:300px) {
+    .grid-portfolio {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'work1'
+        'work2'
+        'work3'
+        'work4'
+        'work5';
+    }
+    
 }
