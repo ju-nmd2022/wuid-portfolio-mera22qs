@@ -177,7 +177,7 @@ p,li {
     
 }
 
-@media screen and (max-width:300px) {
+@media screen and (max-width:800px) {
     .grid-portfolio {
         grid-template-columns: 1fr;
         grid-template-areas: 
