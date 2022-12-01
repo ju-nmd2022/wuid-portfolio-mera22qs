@@ -41,6 +41,13 @@ p,li {
     font-family: 'Times New Roman', Times, serif;
 }
 
+#slide-in{
+    animation-name:slide-in;
+    animation-duration: 3s;
+    animation-timing-function:ease-in;
+    animation-iteration-count: 1;
+    animation-direction: margin-top;
+}
 .ocean {
     margin-top: 1rem;
    border-radius: 10%;
@@ -147,17 +154,29 @@ p,li {
     border-radius: 10%;
     max-width: 800px;
 } 
-.branding:hover {
-    animation-name: branding-color;
+
+#portfolio-wow:hover {
+    animation-name: portfolio-wows;
     animation-timing-function: ease-in;
     animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
-@keyframes branding-color {
-    0% {background-color: blueviolet; }
-    50% {background-color: aquamarine;}
-    100% {background-color: beige;}
+
+@keyframes slide-in {
+    from {margin-top: 50%;}
+    to {margin-bottom: 100%;}
     
 }
+@keyframes portfolio-wows {
+    0% {background-color: blueviolet; }
+    20% {background-color: aquamarine;}
+    40% {background-color: beige;}
+    60% {background-color: rgb(248, 91, 248);}
+    80% {background-color: rgb(255, 209, 92);}
+    100% {background-color: rgb(93, 189, 244);}
+    
+}
+
 @media screen and (max-width:300px) {
     .grid-portfolio {
         grid-template-columns: 1fr;
