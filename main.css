@@ -31,10 +31,15 @@ body {
     text-align: center;
     text-decoration: underline;
 }
-.item1 > h2,h3,h4 {
+.headline {
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
-    text-align:left
+    text-align:left;
+}
+.flexbox-jkpg {
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:left;
 }
 p,li {
     font-size: 15px;
