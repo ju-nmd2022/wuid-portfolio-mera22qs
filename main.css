@@ -1,12 +1,14 @@
 body {
     background-color:#DDE3E3;
     margin: 0px;
+    height: 100vh;
 }
 .header {
     display: flex;
     flex-direction: row;
     gap: 5rem;
     justify-content: center;
+    max-width: 100%;
 }
     
 .header > p {   
