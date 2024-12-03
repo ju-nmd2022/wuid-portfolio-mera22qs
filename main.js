@@ -12,5 +12,5 @@ pinkBtn.addEventListener("click", function (event) {
 });
 
 blueBtn.addEventListener("click", function (event) {
-  bodyElement.style.backgroundColor = "#dde3e3;";
+  bodyElement.style.backgroundColor = "#dde3e3";
 });
