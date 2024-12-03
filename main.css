@@ -66,8 +66,14 @@ button {
 }
 p,
 li {
-  font-size: 15px;
+  font-size: 2rem;
   font-family: "Times New Roman", Times, serif;
+}
+
+.btn-text {
+  font-size: 1rem;
+  margin-left: 1rem;
+  font-style: oblique;
 }
 
 #slide-in {
