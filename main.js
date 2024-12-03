@@ -1,3 +1,10 @@
+// *    Title: Changing the background color | HTML & JavaScript
+// *    Author: Ingesson, E
+// *    Date: 2023
+// *    Code version: 2.0
+// *    Availability: https://www.youtube.com/watch?v=UChcWJ-yRwI
+// *
+
 const greenBtn = document.getElementById("btn-green");
 const pinkBtn = document.getElementById("btn-pink");
 const blueBtn = document.getElementById("btn-blue");
